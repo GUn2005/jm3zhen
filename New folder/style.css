@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Work Sans;
+}
+body {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./炜阳.png");
+}
+hr {
+  color: white;
+}
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-family: Work Sans Thin;
+}
+.typing {
+  font-family: HYShangWeiHeFengTi;
+  font-size: 3rem;
+  position: relative;
+}
+.typing::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  right: -5px;
+  border-right: 2px solid white;
+  animation: blink 1s infinite ease;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.div {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+}
+img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+p {
+  font-size: 2rem;
+}
+.btn {
+  outline: none;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: transparent;
+  border: 2px solid #7803d8;
+  color: #6003ac;
+  border-radius: 10em;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:active {
+  background-color: #7d67d3;
+}
